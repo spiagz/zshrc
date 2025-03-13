@@ -1,6 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export W="$HOME/workspace"
 export LW="$HOME/workspace/laravel"
+export DEFAULT_USER="spiagz"
 
 ZSH_THEME="agnoster"
 
@@ -16,8 +17,10 @@ alias pamf="php artisan migrate:fresh"
 alias pam="php artisan migrate"
 alias paihg="php artisan ide-helper:generate"
 alias paihm="php artisan ide-helper:models --reset"
-alias xampp="sudo /opt/lampp/lampp"
-alias downapache="sudo /etc/init.d/apache2 stop"
+alias cda="composer dumpautoload"
 alias src="source ~/.zshrc"
 alias zshrc="nvim ~/.zshrc"
 alias cli_cpa="libreoffice --calc $W/clients.ods"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
